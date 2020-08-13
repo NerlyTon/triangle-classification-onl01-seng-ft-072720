@@ -13,8 +13,9 @@ class Triangle
       elsif
       (@length_side_a+@length_side_b <= @length_side_c) || (@length_side_a+@length_side_c <= @length_side_b) || (@length_side_b+@length_side_c <= @length_side_a)
         raise TriangleError
-      else 
-        if @length_side_a == @length_side_b || @length_side_b == @length_side_c
+      end
+      
+      if @length_side_a == @length_side_b || @length_side_b == @length_side_c
       :equilateral
     elsif
       @length_side_a == @length_side_b || @length_side_b == @length_side_c || @length_side_a == @length_side_c
