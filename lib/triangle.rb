@@ -15,13 +15,12 @@ class Triangle
         raise TriangleError
       end
       
-      if @length_side_a == @length_side_b || @length_side_b == @length_side_c || @length_side_a == @length_side_c
+      if @length_side_a == @length_side_b && @length_side_b == @length_side_c && @length_side_a == @length_side_c
       :equilateral
     elsif
       @length_side_a != @length_side_b && @length_side_b != @length_side_c && @length_side_a != @length_side_c
       :scalene
     else
-      :isosceleselsif
       @length_side_a == @length_side_b || @length_side_b == @length_side_c || @length_side_a == @length_side_c
       :isosceles
     end
