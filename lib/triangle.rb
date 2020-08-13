@@ -18,11 +18,10 @@ class Triangle
       if @length_side_a == @length_side_b || @length_side_b == @length_side_c
       :equilateral
     elsif
-      @length_side_a == @length_side_b || @length_side_b == @length_side_c || @length_side_a == @length_side_c
-      :isosceles
-    elsif
       @length_side_a != @length_side_b && @length_side_b != @length_side_c && @length_side_a != @length_side_c
       :scalene
+    else
+      :isosceles
     end
   end
 
