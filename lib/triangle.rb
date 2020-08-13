@@ -13,5 +13,8 @@ class Triangle
     elsif
       length_side_b == length_side_c
       isosceles
+    else
+      length_side_a != length_side_b != length_side_c
+      scalene
       
 end
