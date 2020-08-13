@@ -21,6 +21,8 @@ class Triangle
       @length_side_a != @length_side_b && @length_side_b != @length_side_c && @length_side_a != @length_side_c
       :scalene
     else
+      :isosceleselsif
+      @length_side_a == @length_side_b || @length_side_b == @length_side_c || @length_side_a == @length_side_c
       :isosceles
     end
   end
